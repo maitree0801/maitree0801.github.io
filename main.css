@@ -1,0 +1,63 @@
+header, section, p, div, span, footer{
+    border: 1pt dashed dimgrey;
+    background-color: rgba(152, 152, 219, 0.514);
+    padding: 2%;
+}
+
+header{
+    height: 30vh;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+}
+
+.navitem{
+    width: 20%;
+    margin: 2% auto;
+    padding: 10px;
+}
+
+#maindiv{
+    display: flex;
+    flex-direction: row;
+    margin: 2% auto;
+}
+
+.main{
+    width: 60%;
+    margin: 2% auto;
+    padding: 1%;
+    height: 100vh;
+}
+
+.sidebar{
+    width: 30%;
+    margin: 2% auto;
+    padding: 1%;
+}
+
+/* Mobile View */
+@media screen and (max-width:500px){
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navitem{
+        width: 100%;
+    }
+
+    #maindiv{
+        flex-direction: column;
+    }
+
+    .main{
+        width: 90%;
+    }
+    .sidebar{
+        width: 90%;
+    }
+}
+

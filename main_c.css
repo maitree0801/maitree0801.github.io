@@ -1,0 +1,103 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+}
+
+
+header, section, p, div, span, footer{
+    /* border: 1pt dashed dimgrey; */
+    /* background-color: rgba(152, 152, 219, 0.514); */
+    padding: 2%;
+}
+
+header{
+    height: 30vh;
+
+    /* change */
+    background-image: url("header-background.jpg");
+    background-size: cover;
+    margin-bottom: 8%;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+}
+
+.navitem{
+    text-align: center;
+    width: 20%;
+    height: max-content;
+    margin: 1% auto;
+    /* padding: 10px; */
+}
+
+#maindiv{
+    display: flex;
+    flex-direction: row;
+    margin: 1% auto;
+}
+
+.main{
+    width: 60%;
+    margin: 1% auto;
+    text-align: justify;
+    /* height: 100vh; */
+}
+
+.sidebar{
+    width: 30%;
+    margin: 1% auto;
+}
+
+
+footer{
+    background: rgba(145, 187, 226, 0.438);
+    /* height: 4vh; */
+    margin: 0px;
+    text-align: center;
+}
+
+
+/* change */
+
+#user_img{
+    display: block;
+    border-radius: 50%;
+    margin: 3%;
+    width: 35vh;
+    height: 35vh;
+}
+
+
+/* Mobile View */
+@media screen and (max-width:500px){
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navitem{
+        width: 100%;
+    }
+
+    #maindiv{
+        flex-direction: column;
+    }
+
+    .main{
+        width: 90%;
+    }
+    .sidebar{
+        width: 90%;
+    }
+
+    /* change */
+    #user_img{
+        margin:3% auto;
+    }
+    header{
+        text-align: center;
+        margin-bottom: 25%;
+    }
+}
+
